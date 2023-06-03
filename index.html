@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todo List</title>
+  <style>
+    body{
+        background-color:rgb(158, 186, 203);
+        color:white;
+        
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-size:25px;
+      color:black;
+      background-color:rgb(255, 255, 255);
+      border-radius:10px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    li span {
+      flex-grow: 1;
+    }
+
+    .delete-btn {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size:20px;
+    }
+    #taskInput{
+        text-align:center;
+        border-color:black;
+        border-radius:10px;
+        font-size:20px;
+    }
+    #btn{
+        text-align:center;
+        border-color:black;
+        border-radius:10px;
+        font-size:20px;
+        cursor:pointer;
+        background-color:black;
+        color:white;
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    #btn:hover{
+        background-color:white;
+        color:black;
+    }
+    #a1{
+        text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; font-size:50px;"><b><u>Todo List</u></b></h1>
+  <br>
+  <div id="a1">
+  <input type="text" id="taskInput" placeholder="Enter a new task">&nbsp;&nbsp;
+  <button id="btn" onclick="addTask()">Add</button>
+</div>
+<br>
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
